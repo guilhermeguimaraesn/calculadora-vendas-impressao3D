@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/impressao-3d.ico" type="image/x-icon">
+  <script type="module" src="script.js" defer></script>
+</head>
+
+<body class="bg-gradient-to-tr from-gray-900 via-blue-950 to-purple-950 h-auto md:h-screen flex justify-center items-center">
+  <main class="md:w-1/2 h-auto bg-sky-800 rounded">
+    <h1 class="text-gray-200 text-center text-2xl font-bold pt-4">Vendas Impressão 3D</h1>
+    <div id="content" class="flex flex-col md:flex-row">
+      <div id="valores" class="w-auto md:w-1/2">
+        <form class="p-4 w-full flex flex-col gap-2">
+          <fieldset
+            class="p-4 border-solid border-gray-200 border rounded flex flex-col gap-2 items-start justify-center">
+            <legend class="px-2 font-bold text-gray-200">Filamento</legend>
+            <div id="input-wrapper" class="flex flex-col w-full">
+              <label for="" class="text-gray-200">Preço do Kg:</label>
+              <input type="number" name="preco" id="preco"
+                class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center" placeholder="180">
+            </div>
+          </fieldset>
+          <fieldset
+            class="p-4 border-solid border-gray-200 border rounded flex flex-col gap-2 items-start justify-center">
+            <legend class="px-2 font-bold text-gray-200">Fatiador</legend>
+            <div id="input-wrapper">
+              <label for="" class="text-gray-200">Consumo de filamento em gramas:</label>
+              <input type="number" name="gramas" id="gramas"
+                class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center	" placeholder="120">
+            </div>
+            <div id="input-wrapper" >
+              <label for="" class="text-gray-200">Tempo de impressão em horas:</label>
+              <input type="number" name="horas" id="horas"
+                class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center	" placeholder="12">
+            </div>
+          </fieldset>
+          <fieldset
+            class="p-4 border-solid border-gray-200 border rounded flex flex-col gap-2 items-start justify-center">
+            <legend class="px-2 font-bold text-gray-200">Lucro</legend>
+            <div id="buttons" class="flex gap-2 w-full">
+              <button type="button"
+                class="px-4 py-2 rounded bg-yellow-400 flex-1 font-bold text-sky-800 hover:brightness-90" id="200"
+                value="200">200%</button>
+              <button type="button"
+                class="px-4 py-2 rounded bg-yellow-400 flex-1 font-bold text-sky-800 hover:brightness-90" id="300"
+                value="300">300%</button>
+              <button type="button"
+                class="px-4 py-2 rounded bg-yellow-400 flex-1 font-bold text-sky-800 hover:brightness-90" id="500"
+                value="500">500%</button>
+            </div>
+            <input type="number" name="lucro" id="lucro"
+              class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center" placeholder="outra margem de lucro">
+          </fieldset>
+        </form>
+        
+      </div>
+      <div id="resultado" class="w-auto md:w-1/2 p-4 ">
+        <img src="./assets/Ecommerce campaign-amico.svg" alt="">
+        <div class="flex flex-col items-center h-1/2">
+          <h1 class="text-3xl font-bold text-gray-200">Valor de venda</h1>
+          <h2 id="valorVendas" class="text-2xl font-bold text-yellow-400">R$ 00,00</h2>
+        </div>
+      </div>
+    </div>
+    <button class="px-4 py-2 rounded-b bg-yellow-400 w-full text-sky-800 font-bold hover:brightness-90"
+          id="calcular">Calcular</button>
+  </main>
+</body>
+
+</html>
