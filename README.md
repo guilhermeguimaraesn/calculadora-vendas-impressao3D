@@ -9,7 +9,7 @@
 ![Tela de Produtos](./.github/tela-mobile.png) 
 
 ## Descrição
-Este projeto foi desenvolvido com o intuito de facilitar o calculo para a venda de produtos fabricados a parir de uma impressora 3D. Nessa calculadora o usuário pode definir o preço do filamento, o gasto de material, horas de impressão e margem de lucro. Realizando assim o calculo e entregando um valor sugerido para venda, tendo como base os valores fornecidos.
+Este projeto foi desenvolvido com o intuito de facilitar o calculo para a venda de produtos fabricados a partir de uma impressora 3D. Nessa calculadora o usuário pode definir o preço do filamento, o gasto de material, horas de impressão e margem de lucro. Realizando assim o calculo e entregando um valor sugerido para venda, tendo como base os valores fornecidos.
 
 ## Funcionalidades Principais:
 - **Interface Intuitiva:** Interface de usuário amigável e fácil de navegar, permitindo uma experiência de usuário agradável.
