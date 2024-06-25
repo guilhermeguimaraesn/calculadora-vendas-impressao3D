@@ -31,7 +31,7 @@ Este projeto foi desenvolvido com o intuito de facilitar o calculo para a venda 
 - **Javascript:** Para obeter os dados que o usuário digita e realização do calculo. Atualização do resultado do calculo com base nas interações do usuário. 
 
 ## Acessar o Projeto
-Para utilizar a calculadora, clique aqui: [Portifólio Guilherme Guimarães](https://portifolio-guilherme-guimaraes-projects.vercel.app/)
+Para utilizar a calculadora, clique aqui: [Calculadora Vendas Impressão3D](https://calculadora-vendas-impressao3-d.vercel.app/)
 
 ## Autor
 Desenvolvido com carinho por [Guilherme Guimarães](https://github.com/guilhermeguimaraesn).
