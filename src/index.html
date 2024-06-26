@@ -21,7 +21,7 @@
             <div id="input-wrapper" class="flex flex-col w-full">
               <label for="" class="text-gray-200">Preço do Kg:</label>
               <input type="number" name="preco" id="preco"
-                class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center" placeholder="180">
+                class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center" placeholder="Ex: 180.00">
             </div>
           </fieldset>
           <fieldset
@@ -30,12 +30,12 @@
             <div id="input-wrapper">
               <label for="" class="text-gray-200">Consumo de filamento em gramas:</label>
               <input type="number" name="gramas" id="gramas"
-                class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center	" placeholder="120">
+                class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center	" placeholder="Ex: 300">
             </div>
             <div id="input-wrapper" >
               <label for="" class="text-gray-200">Tempo de impressão em horas:</label>
               <input type="number" name="horas" id="horas"
-                class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center	" placeholder="12">
+                class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center	" placeholder="Ex: 14">
             </div>
           </fieldset>
           <fieldset
@@ -53,20 +53,23 @@
                 value="500">500%</button>
             </div>
             <input type="number" name="lucro" id="lucro"
-              class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center" placeholder="outra margem de lucro">
+              class="p-1 bg-slate-300/30 text-gray-200 rounded border-gray-200 border w-full text-center" placeholder="Personalizar margem de lucro">
           </fieldset>
         </form>
         
       </div>
       <div id="resultado" class="w-auto md:w-1/2 p-4 ">
         <img src="./assets/Ecommerce campaign-amico.svg" alt="">
-        <div class="flex flex-col items-center h-1/2">
-          <h1 class="text-3xl font-bold text-gray-200">Valor de venda</h1>
+        <div class="flex flex-col items-center h-1/2 gap-2">
+          <!-- <h1 class="text-2xl font-bold text-gray-200">Preço de custo</h1>
+          <h2 id="valorCusto" class="text-2xl font-bold text-yellow-400">R$ 00,00</h2> -->
+
+          <h1 class="text-2xl font-bold text-gray-200">Preço para venda</h1>
           <h2 id="valorVendas" class="text-2xl font-bold text-yellow-400">R$ 00,00</h2>
         </div>
       </div>
     </div>
-    <button class="px-4 py-2 rounded-b bg-yellow-400 w-full text-sky-800 font-bold hover:brightness-90"
+    <button class="px-4 md:py-2 py-4 rounded-b bg-yellow-400 w-full text-sky-800 font-bold hover:brightness-90"
           id="calcular">Calcular</button>
   </main>
 </body>

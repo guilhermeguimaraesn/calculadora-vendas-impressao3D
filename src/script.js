@@ -7,6 +7,7 @@ function calcularPreco() {
   const lucroImpressao = document.getElementById("lucro").value;
 
   let valorVenda = document.getElementById("valorVendas");
+  // let valorCusto = document.getElementById("valorCusto");
 
   let custoMaterial = 0;
   let gastoEnerg = 0;
@@ -30,6 +31,7 @@ function calcularPreco() {
 
     precoVenda = custoProducao + (custoProducao * lucroImpressao) / 100;
 
+    // valorCusto.innerText = `R$ ${custoProducao.toFixed(2)}`;
     valorVenda.innerText = `R$ ${precoVenda.toFixed(2)}`;
 
     console.log(precoVenda.toFixed(2));
